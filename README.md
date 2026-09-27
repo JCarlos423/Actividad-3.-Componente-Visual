@@ -220,3 +220,4 @@ const miVideo = document.getElementById('miVideo');
 
 ## Video
 Video de componentes:
+https://youtu.be/Tv6tQ0vymQ4
