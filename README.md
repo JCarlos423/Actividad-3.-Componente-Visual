@@ -216,7 +216,7 @@ const miVideo = document.getElementById('miVideo');
 ### Carrusel:
 ![Interfaz de el login:](img/ejemploCarrusel.png)
 ### Barra de volumen:
-![error en registro](ejemploBarra.png)
+![error en registro](img/ejemploBarra.png)
 
 ## Video
 Video de componentes:
