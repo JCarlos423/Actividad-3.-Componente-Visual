@@ -1,0 +1,102 @@
+/*
+Variables css (custom properties)
+Proposito: Centralizar colores fuentes y tamaños para facil mantenimiento
+Beneficios: Cambios globales desde un solo lugar-*/
+
+:root{
+    --color-primario: #0221ce;
+    --color-secundario: #3444f0;
+    --color-fondo: #c2c1fb;
+    --color-texto: #000000;
+    --color-borde: #e9ecef;
+}
+
+/*
+Recet basico
+Proposito: Eliminar margenes y paddings predeterminados del navegador.
+Beneficios: Evita inconsitencias entre navegadores-*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*estilos generales
+tipografia y fondo*/
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/*contenedor principal
+*/
+
+.contenedorformulario{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos tipograficos*/
+
+h1{
+    font-size: 48px;
+    color: var(--color-primario);
+    margin-bottom: 8px;
+}
+h2{
+    font-size: 18px;
+    color: var(--color-primario);
+    margin-bottom: 8px;
+}
+
+.subtitulo{
+    color: #6c757d;
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/*disposion en columnas grupo doble*/
+#botonera{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+#botonera2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/*bton de envio*/
+.botton{
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 48px 92px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botton-hover{
+    background-color: #020040;
+}

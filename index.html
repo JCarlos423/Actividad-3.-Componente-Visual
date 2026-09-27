@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Librería UI Interactiva</title>
+  <script src="js/componentes.js"></script>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+
+  <div class="contenedorformulario">
+        <h1>Muestra de componentes</h1>
+        <p class="subtitulo">Componentes:</p>
+        <div id="botonera">
+            <p class="subtitulo">Modal</p>
+            <p class="subtitulo">Carrusel</p>
+            <p class="subtitulo">Barra de volumen</p>  
+        </div><br><br>
+        <button class="botton" id="openModalBtn">Modal</button><br>
+      <p class="subtitulo">El primer componente es una ventana modal donde se pueden poner alertas</p>
+
+      <br>
+  <!--1. MODAL -->
+  <div class="modal-overlay" id="myModal">
+    <div class="modal-container">
+      <button class="modal-close">&times;</button>
+      <h2>¿ESTAS PONIENDO ATENCION?</h2>
+      <p>El tercer album de NSQK esta en camino.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 2. CARRUSEL -->
+  <div class="carousel-container" id="myCarousel">
+    <div class="carousel-track">
+      <div class="carousel-slide"><img src="img/epa.jpg" alt="Imagen 1"></div>
+      <div class="carousel-slide"><img src="img/moscas.jpg" alt="Imagen 2"></div>
+      <div class="carousel-slide"><img src="img/nsqk.jpg" alt="Imagen 3"></div>
+      <div class="carousel-slide"><img src="img/images.jpg" alt="Imagen 4"></div>
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div><br>
+<p class="subtitulo">El segundo componente es un carrusel de imagenes en la cual se pueden agregar imagenes en linea o local.</p>
+
+  <!-- 3. BARRA DE VOLUMEN -->
+
+  <video id="miVideo" src="img/hombredebiennsqk.mp4" width="900" controls></video>
+  <div class="volume-control" id="myVolume">
+    <span class="volume-icon">🔊</span>
+    <div class="volume-slider-wrapper">
+      <div class="volume-fill"></div>
+    </div>
+    <span class="volume-text">50%</span>
+        </div><br>
+        <p class="subtitulo">El ultimo componente es una barra de volumen para la pagina</p>
+  </div>
+  
+
+</body>
+</html>
